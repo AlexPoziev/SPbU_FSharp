@@ -16,6 +16,9 @@ lib/release
 Debug
 *.suo
 *.user
+*.xml
+*.vcs
+*.vsc
 obj
 bin
 /build/
