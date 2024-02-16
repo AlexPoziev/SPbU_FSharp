@@ -2,7 +2,7 @@
 let n = Console.ReadLine() |> int
 let m = Console.ReadLine() |> int
 
-let powerSeries n m =
+let powerSeries (n, m) =
     let twoInNthPower = pown 2 n
     let rec helper acc element i =
         match i with
@@ -12,7 +12,7 @@ let powerSeries n m =
     if (n < 0 || n + m < 0) then []
     else helper [twoInNthPower] twoInNthPower (n + 1)
         
-let result = powerSeries n m
+let result = (n, m) |> powerSeries
 match result with
 | [] -> Console.WriteLine("Incorrect arguments")
 | _ -> result |> List.iter Console.WriteLine
