@@ -9,7 +9,7 @@ let findFirstIndexTestData =
     |> List.map (fun (ls, number, expected) -> TestCaseData(ls, number, expected))
 
 [<TestCaseSource("findFirstIndexTestData")>]
-let findFirstIndex_ShouldReturnExpectedResult(ls, number, expected) =
+let findFirstIndex_ShouldReturnExpectedResult (ls, number, expected) =
     Assert.AreEqual(expected, findFirstIndex ls number)
     
 [<Test>]
