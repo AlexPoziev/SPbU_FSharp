@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "NumberSearch", "NumberSearch\NumberSearch.fsproj", "{BC05274D-93CB-421F-803F-75136605DBEC}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "NumberSearch", "NumberSearch\NumberSearch.fsproj", "{244C7394-9EF9-4A1E-AC38-433168C04590}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "NumberSearchTests", "NumberSearchTests\NumberSearchTests.fsproj", "{C005F4E8-07E8-40BB-B087-C5EC5E341E6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +10,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BC05274D-93CB-421F-803F-75136605DBEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BC05274D-93CB-421F-803F-75136605DBEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BC05274D-93CB-421F-803F-75136605DBEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BC05274D-93CB-421F-803F-75136605DBEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{244C7394-9EF9-4A1E-AC38-433168C04590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{244C7394-9EF9-4A1E-AC38-433168C04590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{244C7394-9EF9-4A1E-AC38-433168C04590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{244C7394-9EF9-4A1E-AC38-433168C04590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C005F4E8-07E8-40BB-B087-C5EC5E341E6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C005F4E8-07E8-40BB-B087-C5EC5E341E6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C005F4E8-07E8-40BB-B087-C5EC5E341E6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C005F4E8-07E8-40BB-B087-C5EC5E341E6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
