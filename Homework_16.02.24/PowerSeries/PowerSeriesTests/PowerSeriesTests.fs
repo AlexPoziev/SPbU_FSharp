@@ -11,10 +11,10 @@ let correctPowerSeriesTests =
     |> List.map (fun (n, m, ls) -> TestCaseData(n, m, ls))
 
 [<TestCaseSource("correctPowerSeriesTests")>]
-let PowerSeries_WithCorrectArguments_ShouldReturnExpectedResult(n, m, expected) =
+let PowerSeries_WithCorrectArguments_ShouldReturnExpectedResult (n, m, expected) =
     Assert.AreEqual(expected, match powerSeries (n,m) with | Some(x) -> x | _ -> [])
     
 [<TestCase(-1, 5)>]
 [<TestCase(1, -2)>]
-let PowerSeries_WithIncorrectArgument_ShouldReturnNone(n, m) =
+let PowerSeries_WithIncorrectArgument_ShouldReturnNone (n, m) =
     Assert.AreEqual(None, powerSeries (n, m))
