@@ -16,5 +16,5 @@ let findFirstIndex_ShouldReturnExpectedResult (ls, number, expected) =
 let findFirstIndex_WithListNotContainingNumber_ShouldReturnNone () =
     let number = 5
     let ls = [1; 2]
-    Assert.AreEqual(None, findFirstIndex ls number)
-   
+    let expected = None
+    Assert.AreEqual(expected, findFirstIndex ls number)
