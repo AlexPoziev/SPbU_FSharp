@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Factorial", "Factorial\Factorial.fsproj", "{31D26A1F-A23E-4342-989A-2511166C7DE9}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Factorial", "Factorial\Factorial.fsproj", "{D27687F7-7551-4505-A80E-1C799D7A1E9B}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FactorialTests", "FactorialTests\FactorialTests.fsproj", "{940F7435-1F91-4C91-B698-3F3CF5DF815C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +10,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{31D26A1F-A23E-4342-989A-2511166C7DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31D26A1F-A23E-4342-989A-2511166C7DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31D26A1F-A23E-4342-989A-2511166C7DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31D26A1F-A23E-4342-989A-2511166C7DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D27687F7-7551-4505-A80E-1C799D7A1E9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D27687F7-7551-4505-A80E-1C799D7A1E9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D27687F7-7551-4505-A80E-1C799D7A1E9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D27687F7-7551-4505-A80E-1C799D7A1E9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{940F7435-1F91-4C91-B698-3F3CF5DF815C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{940F7435-1F91-4C91-B698-3F3CF5DF815C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{940F7435-1F91-4C91-B698-3F3CF5DF815C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{940F7435-1F91-4C91-B698-3F3CF5DF815C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
