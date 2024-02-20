@@ -1,12 +1,11 @@
 ﻿module PowerSeries
 
 let powerSeries (n, m) =
-    if (n < 0 || n + m < 0) then None else
+    if (n < 0 || m < 0) then None else
         
-    let twoToThePowerOfN = pown 2 n
+    let endLimit = pown 2 (n + m)
     let rec helper acc element i =
         match i with
-        | _ when i > m + n -> Some(acc)
-        | _ when i >= n -> helper (acc @ [element * 2]) (element * 2) (i + 1)
-        | _ -> None
-    helper [twoToThePowerOfN] twoToThePowerOfN (n + 1)
+        | 0 -> Some(acc)
+        | _ -> helper (element :: acc) (element / 2) (i - 1)
+    helper [endLimit] (endLimit / 2) m
