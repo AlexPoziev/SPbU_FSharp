@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PrimeNumberGenerator", "PrimeNumberGenerator\PrimeNumberGenerator.fsproj", "{2D529708-A727-4F70-88FE-2B1FEF2DBC1D}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PrimeNumberGeneratorTests", "PrimeNumberGeneratorTests\PrimeNumberGeneratorTests.fsproj", "{B15B47B9-B578-416A-823B-361A75E52632}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D529708-A727-4F70-88FE-2B1FEF2DBC1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D529708-A727-4F70-88FE-2B1FEF2DBC1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D529708-A727-4F70-88FE-2B1FEF2DBC1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D529708-A727-4F70-88FE-2B1FEF2DBC1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B15B47B9-B578-416A-823B-361A75E52632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B15B47B9-B578-416A-823B-361A75E52632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B15B47B9-B578-416A-823B-361A75E52632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B15B47B9-B578-416A-823B-361A75E52632}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
