@@ -1,0 +1,46 @@
+\documentclass{article}
+
+\usepackage{listings}
+
+\lstdefinelanguage{Lambda}{
+  literate={
+    {->}{{$\rightarrow_\beta$}}{2}
+    {lambda/}{{$\lambda$}}{1}
+  },
+  basicstyle={\sffamily},
+  keywordstyle={\bfseries},
+  keepspaces,
+  mathescape
+}[keywords,comments,strings]
+
+\begin{document}
+\begin{lstlisting}[language=Lambda]
+Normalization
+
+((lambda/a.(lambda/b.b b) (lambda/b.b b)) b) ((lambda/c.(c b)) (lambda/a.a)) ->
+
+((lambda/a.(lambda/b.b b) (lambda/b.b b)) b) ((lambda/a.a) b) ->
+
+((lambda/a.(lambda/b.b b) (lambda/b.b b)) b) b ->
+
+((lambda/b.b b) (lambda/b.b b)) b
+
+
+
+S K K
+
+S K K = (lambda/x y z.x z (y z)) (lambda/x y.x) (lambda/x y.x) ->
+
+(lambda/y z.(lambda/x y.x) z (y z)) (lambda/x y.x) ->
+
+lambda/z.((lambda/x y.x) z ((lambda/x y.x) z)) ->
+
+lambda/z.((lambda/x y.x) z (lambda/y.z)) ->
+
+lambda/z.((lambda/y.z) (lambda/y.z)) ->
+
+lambda/z.z = I
+
+\end{lstlisting}
+
+\end{document}
