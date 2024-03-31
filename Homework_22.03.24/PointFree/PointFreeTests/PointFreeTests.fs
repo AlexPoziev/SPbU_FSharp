@@ -13,5 +13,5 @@ let ``Is function works as expected`` () =
 
 [<Test>]
 let ``Are the functions equivalent`` () =
-    let isCorrect x ls = funcInitial x ls = funcInitial x ls
+    let isCorrect x ls = funcInitial x ls = funcLast x ls
     Check.QuickThrowOnFailure isCorrect
