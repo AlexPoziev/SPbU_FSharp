@@ -25,7 +25,7 @@ let startPhonebookApp =
         | "1" ->
             printfn "Write name and phone number divided by whitespace"                
             match contactByLine (Console.ReadLine()) with
-            | Some x-> helper (addContact phonebook x)
+            | Some x-> helper (addContact (phonebook, x))
             | None ->
                 printfn "Incorrect input"
                 helper phonebook

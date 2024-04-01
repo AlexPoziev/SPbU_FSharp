@@ -4,15 +4,15 @@ open System.IO
 
 type Contact = string * string
 
-let addContact ls contact = contact :: ls
+let addContact (ls: Contact list, contact: Contact) = contact :: ls
 
 let findName (ls: Contact list, phoneNumber: string) =
-    match List.tryFind (fun x -> snd x = phoneNumber) ls with
+    match List.tryFindBack (fun x -> snd x = phoneNumber) ls with
     | Some x -> Some(fst x)
     | _ -> None
 
 let findPhoneNumber (ls: Contact list, name: string) =
-    match List.tryFind (fun x -> fst x = name) ls with
+    match List.tryFindBack (fun x -> fst x = name) ls with
     | Some x -> Some(snd x)
     | _ -> None
     
