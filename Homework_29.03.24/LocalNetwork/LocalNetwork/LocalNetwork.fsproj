@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="IOperatingSystem.fs" />
+        <Compile Include="Linux.fs" />
+        <Compile Include="MacOS.fs" />
+        <Compile Include="Windows.fs" />
+        <Compile Include="Computer.fs" />
+        <Compile Include="LocalNetwork.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Update="FSharp.Core" Version="8.0.200" />
+    </ItemGroup>
+
+</Project>
