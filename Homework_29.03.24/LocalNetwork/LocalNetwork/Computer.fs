@@ -12,5 +12,5 @@ type Computer(system: IOperatingSystem, connectedComputers: Computer list, isInf
         this.ConnectedComputers <- computers @ this.ConnectedComputers
         
     member this.InfectComputer () =
-        if (randomNumberGenerator.Next(0, 100) <= this.OperatingSystem.InfectionProbability) then
+        if (randomNumberGenerator.Next(1, 100) <= this.OperatingSystem.InfectionProbability) then
             this.IsInfected <- true
