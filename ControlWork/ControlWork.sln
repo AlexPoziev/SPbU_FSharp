@@ -4,6 +4,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ControlWork", "ControlWork\
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PriorityQueueTests", "PriorityQueueTests\PriorityQueueTests.fsproj", "{634E08E0-5FAB-4832-A71A-CFD0B566A87B}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Square", "Square\Square.fsproj", "{226EB591-00C0-4B30-B6E6-9A4C962207BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{634E08E0-5FAB-4832-A71A-CFD0B566A87B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{634E08E0-5FAB-4832-A71A-CFD0B566A87B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{634E08E0-5FAB-4832-A71A-CFD0B566A87B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{226EB591-00C0-4B30-B6E6-9A4C962207BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{226EB591-00C0-4B30-B6E6-9A4C962207BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{226EB591-00C0-4B30-B6E6-9A4C962207BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{226EB591-00C0-4B30-B6E6-9A4C962207BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

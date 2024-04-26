@@ -1,18 +1,15 @@
 module ControlWork.Square 
     let createSquare n =
-        let createRow i isEdgeRow =
-            Array.init n (fun j ->
+        let createRow i =
+            List.init n (fun j ->
                 match (i, j) with
-                | 1, _ -> "*"
-                | _, 1 -> "*"
-                | n, _ -> "*"
-                | _, n -> "*"
+                | 0, _ -> "*"
+                | _, 0 -> "*"
+                | t, _ when t = n - 1 -> "*"
+                | _, t when t = n - 1 -> "*"
                 | _ -> " ")
-        Array.init n (fun i ->
-            if i = 0 || i = n - 1 then
-                createRow (i + 1) true
-            else
-                createRow (i + 1) false)
+        List.init n createRow
+
 
     let printSquare square =
-        square |> Array.iter (fun row -> printfn "%s" (String.concat "" row))
+        square |> List.iter (fun row -> printfn "%s" (String.concat "" row))
