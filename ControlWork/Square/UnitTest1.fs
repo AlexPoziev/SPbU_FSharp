@@ -6,13 +6,13 @@ open FsUnit
 
 
 [<Test>]
-let Test1 () =
+let CreateSquare_WithLengthOne_ShouldReturnOneStar () =
     let expected = [["*"]]
     let result = createSquare 1
     Assert.AreEqual(expected, result)
     
 [<Test>]
-let Test2 () =
+let CreateSquare_WithLengthFour_ShouldReturnExpectedResult () =
     let expected =  [[ "*"; "*"; "*"; "*" ]; [ "*"; " "; " "; "*" ]; [ "*"; " "; " "; "*" ]; [ "*"; "*"; "*"; "*" ]]
     let result = createSquare 4
     Assert.AreEqual(expected, result)
