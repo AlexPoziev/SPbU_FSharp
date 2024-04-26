@@ -3,6 +3,7 @@
 type PriorityQueue<'T when 'T : comparison>() =
     let mutable list = []
 
+    // function to add element to queue 
     member this.Enqueue(item: 'T) =
         let rec helper orderedList =
             match orderedList with
@@ -11,6 +12,7 @@ type PriorityQueue<'T when 'T : comparison>() =
             | head :: tail -> head :: (helper tail)
         list <- helper list
 
+    // function to get element from queue
     member this.Dequeue() =
         match list with
         | [] -> raise <| System.InvalidOperationException("Empty queue")

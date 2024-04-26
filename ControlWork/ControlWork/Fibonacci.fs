@@ -1,5 +1,6 @@
 module ControlWork.Fibonacci
 
+// function to calculate sum of even fibonacci numbers less than max value
 let sumEvenFibonacci max =
     let rec loop a b sum =
         if a > max then sum
