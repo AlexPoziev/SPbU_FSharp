@@ -11,5 +11,5 @@ module ControlWork.Square
         List.init n createRow
 
 
-    let printSquare square =
-        square |> List.iter (fun row -> printfn "%s" (String.concat "" row))
+    let printSquare n =
+        createSquare n |> List.iter (fun row -> printfn "%s" (String.concat "" row))
