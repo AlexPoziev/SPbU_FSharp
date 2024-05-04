@@ -32,5 +32,8 @@ let getPageSizes (url: string, httpClient: HttpClient) =
     }
 
 let printPageSizes (url: string, httpClient: HttpClient) =
-    Async.RunSynchronously(getPageSizes (url, httpClient)) |> Array.iter (fun (link, length) ->
-        printfn $"%s{link} — %d{length}")
+    async {
+        let! sizes = getPageSizes (url, httpClient)
+        sizes |> Array.iter (fun (link, length) ->
+            printfn "%s — %d" link length)
+    }
