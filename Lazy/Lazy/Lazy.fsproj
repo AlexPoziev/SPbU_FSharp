@@ -7,6 +7,10 @@
 
     <ItemGroup>
         <Compile Include="Library.fs"/>
+        <Compile Include="ILazy.fs" />
+        <Compile Include="SingleThreadedLazy.fs" />
+        <Compile Include="MultiThreadedLazy.fs" />
+        <Compile Include="LockFreeLazy.fs" />
     </ItemGroup>
 
 </Project>
