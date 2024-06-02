@@ -21,3 +21,4 @@ let ShouldReturnRoundedToZeroSymbolAfterComma_WhenAccurateEqualZero () =
         return a * b + 1.01
     }
     flow |> should equal 1
+    
